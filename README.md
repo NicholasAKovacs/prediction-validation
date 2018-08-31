@@ -4,12 +4,16 @@ This is a quick solution to the coding challenge offered by Inight to be conside
 ## Approach
 1.) Read in 3 files as inputs with the descriptions:
 * Window : Integer of window length
-* Actual : Actual prices for stocks, arranged as Hour|Stock|Price
-* Predicted : Predicted prices for stocks, arranged as Hour|Stock|Price
+* Actual : Actual prices for stocks, arranged as:
+      
+      Hour|Stock|Price
+* Predicted : Predicted prices for stocks, arranged as:
+      
+      Hour|Stock|Price
 
 2.) Make 2 nested dictionaries, one for actual prices and the other for predicted prices arranged as follows:
 
-{Hour1: {Stock1 : Price1}, {Stock2: Price2}, ... }{Hour2: {Stock1 : Price1}, {Stock2: Price2}, ... }
+      {Hour1: {Stock1 : Price1}, {Stock2: Price2}, ... }{Hour2: {Stock1 : Price1}, {Stock2: Price2}, ... }
 
 3.) Calculate the diffence in price (error) for each stock at every hour. Nested dictionary structure is same as above. This dictionary does not contain stocks for which there is not data for both the actual and predicted as a particular hour.
 
@@ -17,15 +21,17 @@ This is a quick solution to the coding challenge offered by Inight to be conside
 
 5.) Write to output file arranged as follows:
 
-Hour|Hour+Window|Error
+      Hour|Hour+Window|Error
 
 ## Dependenencies
 Written in Python3 and uses the module:
-Argparse
+   Argparse
 
 ## Run Instructions
 In the root directory of this repo run:
-$ ./run.sh
+
+      $ ./run.sh
+
 If you have both python2 and python3, you will need to specify which one in ./run.sh
 
 ## Comments
