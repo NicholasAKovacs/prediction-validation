@@ -1,5 +1,5 @@
 # My Solution to the Insight Data Engineering - Coding Challenge
-This is a quick, less than 100 lines solution to the coding challenge offered by Inight to be considered further to become a Inight Data Engineering fellow
+This is a quick, less than 100 lines solution to the coding challenge offered by Insight to be considered further to become a Inight Data Engineering fellow
 
 ## Approach
 1.) Read in 3 files as inputs with the descriptions:
