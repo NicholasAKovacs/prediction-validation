@@ -13,7 +13,7 @@ This is a quick, less than 100 lines solution to the coding challenge offered by
 
 2.) Make 2 nested dictionaries, one for actual prices and the other for predicted prices arranged as follows:
 
-      {Hour1: {Stock1 : Price1}, {Stock2: Price2}, ... }{Hour2: {Stock1 : Price1}, {Stock2: Price2}, ... }
+      {Hour1: {Stock1 : Price1, Stock2: Price2, ...}, Hour2: {Stock1 : Price1, Stock2: Price2, ... }}
 
 3.) Calculate the diffence in price (error) for each stock at every hour. Nested dictionary structure is same as above. This dictionary does not contain stocks for which there is not data for both the actual and predicted as a particular hour.
 
