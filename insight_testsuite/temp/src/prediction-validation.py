@@ -28,7 +28,7 @@ def make_price_dictionary(price_input_file):
             line = line.strip('\n')
             (time, stock, price) = line.split('|')
             time = int(time)
-            price = round(float(price), 2)
+            price = float(price)
             if time in price_dict.keys():
                 price_dict[time][stock] = price
             else:
